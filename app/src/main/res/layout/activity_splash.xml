@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGreen"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_splash"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/bg_splash"
+      />
+
+
+
+    <ImageView
+        android:layout_width="327dp"
+        android:layout_height="326dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/triangle_shape" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGetStarted"
+        android:text="@string/getStarted"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="@color/olive"
+        />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="56dp"
+        android:layout_marginStart="92dp"
+        android:outlineAmbientShadowColor="@color/black" />
+
+</RelativeLayout>
