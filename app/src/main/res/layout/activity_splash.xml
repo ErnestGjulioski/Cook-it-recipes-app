@@ -6,14 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightGreen"
-    tools:context=".SplashScreenActivity">
+    tools:context="com.example.cookIt.SplashScreenActivity"
+
+   >
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/bg_splash"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/bg_splash"
+
       />
 
 
