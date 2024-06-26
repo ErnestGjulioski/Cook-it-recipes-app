@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Cook-It"
+rootProject.name = "CookIt"
 include(":app")

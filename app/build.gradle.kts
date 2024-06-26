@@ -1,20 +1,22 @@
-import com.android.tools.r8.Y
-
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
-    id("kotlin-kapt")
+
+  id("kotlin-android")
+  id("com.android.application")
+  id("kotlin-kapt")
+
+
+
 }
 
 
 android {
-    namespace = "com.recipes.cookit"
+    namespace = "com.recipes.CookIt"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.recipes.cookit"
-        minSdk = 32
-        targetSdk = 34
+        applicationId = "com.recipes.CookIt"
+        minSdk = 29
+
         versionCode = 1
         versionName = "1.0"
 
@@ -46,11 +48,27 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.room.common)
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //Room
+
+    implementation(libs.room.ktx)
+    //noinspection KaptUsageInsteadOfKsp
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.room.runtime)
+
+    //scalable unit size
+    implementation(libs.sdp.android)
+
+    //crop image library
+    implementation(libs.android.image.cropper)
+
+    //easy permissions
+    implementation(libs.easypermissons)
+
+
 
 
 

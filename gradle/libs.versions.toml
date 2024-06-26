@@ -1,5 +1,7 @@
 [versions]
 agp = "8.3.1"
+androidImageCropper = "2.8.0"
+easypermissons = "3.0.0"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -10,13 +12,19 @@ material = "1.12.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 roomCommon = "2.6.1"
+roomKtx = "2.6.1"
+roomRuntime = "2.6.1"
+sdpAndroid = "1.0.6"
 supportAnnotations = "28.0.0"
 
 [libraries]
+android-image-cropper = { module = "com.theartodev.edmodo:android-image-cropper", version.ref = "androidImageCropper" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCommon" }
 androidx-room-guava = { module = "androidx.room:room-guava", version.ref = "roomCommon" }
 androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "roomCommon" }
 androidx-room-paging = { module = "androidx.room:room-paging", version.ref = "roomCommon" }
+easypermissons = { module = "pub.devel:easypermissons", version.ref = "easypermissons" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -25,6 +33,9 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
+room-runtime = { module = "amdroidx.room:room-runtime", version.ref = "roomRuntime" }
+sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
 support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
 
 [plugins]

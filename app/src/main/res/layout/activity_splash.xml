@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightGreen"
-    tools:context="com.example.cookIt.SplashScreenActivity"
+    tools:context="com.recipes.cookit.SplashActivity"
 
-   >
+    >
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/bg_splash"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/bg_splash"
 
-      />
+        />
 
 
 
@@ -24,9 +25,10 @@
         android:layout_width="327dp"
         android:layout_height="326dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/triangle_shape" />
+        android:src="@drawable/triangle_shape"
+        android:contentDescription="@string/triangle"
+        />
 
     <Button
         android:layout_width="wrap_content"
