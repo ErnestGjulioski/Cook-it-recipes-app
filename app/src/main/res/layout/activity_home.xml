@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.recipes.cookit.SplashActivity">
+
+    <TextView
+        android:id="@+id/allrecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/All_Recipies"
+        android:textSize="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:padding="@dimen/_8sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/Saturday"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp"
+        android:layout_below="@id/allrecipes">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.Material3.Search"
+            android:queryHint="Search for recipes"
+            android:layout_margin="@dimen/_10sdp"
+            android:iconifiedByDefault="false"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_main_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        tools:itemCount="1"
+        tools:listitem="@layout/item_rv_main_category" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Category_name"
+        android:textSize="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:padding="@dimen/_10sdp"
+        android:fontFamily="@font/Saturday"
+        android:layout_below="@id/rv_main_category"
+        />
+
+
+
+
+</RelativeLayout>

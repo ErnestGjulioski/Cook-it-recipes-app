@@ -3,6 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="olive">#87A03A</color>
-    <color name="lightGray">#6E6850</color>
+    <color name="lightGray">#D9D9D9</color>
     <color name="lightGreen">#63E365</color>
+    <color name="DarkGreen">#338334</color>
+    <color name="HintTextColor">#757474</color>
 </resources>

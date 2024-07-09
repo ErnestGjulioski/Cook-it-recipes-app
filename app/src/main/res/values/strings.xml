@@ -3,4 +3,7 @@
     <string name="getStarted">Get Started!</string>
     <string name="bg_splash">bg_splash</string>
     <string name="triangle">triangle</string>
+    <string name="All_Recipies">All Recipes</string>
+    <string name="dish_name">Dish Name</string>
+    <string name="Category_name">Category name</string>
 </resources>

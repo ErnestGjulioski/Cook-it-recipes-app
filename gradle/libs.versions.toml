@@ -1,5 +1,5 @@
 [versions]
-agp = "8.3.1"
+agp = "8.5.0"
 androidImageCropper = "2.8.0"
 easypermissons = "3.0.0"
 kotlin = "1.9.0"
@@ -16,6 +16,7 @@ roomKtx = "2.6.1"
 roomRuntime = "2.6.1"
 sdpAndroid = "1.0.6"
 supportAnnotations = "28.0.0"
+carUiLib = "2.6.0"
 
 [libraries]
 android-image-cropper = { module = "com.theartodev.edmodo:android-image-cropper", version.ref = "androidImageCropper" }
@@ -37,6 +38,7 @@ room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
 room-runtime = { module = "amdroidx.room:room-runtime", version.ref = "roomRuntime" }
 sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
 support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
+car-ui-lib = { group = "com.android.car.ui", name = "car-ui-lib", version.ref = "carUiLib" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
