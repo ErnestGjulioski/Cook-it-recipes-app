@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.recipes.cookit.SplashActivity">
+    tools:context="com.recipes.cookit.HomeActivity"
+    android:id="@+id/main"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -60,9 +62,10 @@
                 android:text="@string/Category_name"
                 android:textSize="@dimen/_30sdp"
                 android:textColor="@color/black"
-                android:padding="@dimen/_10sdp"
                 android:fontFamily="@font/Saturday"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:paddingStart="@dimen/_10sdp"
+                tools:ignore="RtlSymmetry" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_sub_category"
